@@ -1,0 +1,212 @@
+{
+  "config": {
+    "model": "flan-t5-large",
+    "k": 8,
+    "seed": 1
+  },
+  "token_acc": 0.0086,
+  "macro_f1": 0.0082,
+  "sent_exact": 0.0,
+  "missing_rate": 0.9297,
+  "n_tokens": 3855,
+  "n_sents": 300,
+  "buckets": {
+    "seen_in_pool": {
+      "acc": 0.0163,
+      "n": 1285
+    },
+    "ambiguous_type": {
+      "acc": 0.0052,
+      "n": 2330
+    },
+    "unseen_in_pool": {
+      "acc": 0.0047,
+      "n": 2570
+    },
+    "unambiguous_type": {
+      "acc": 0.0138,
+      "n": 1525
+    }
+  },
+  "per_tag": {
+    "ADJ": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 248
+    },
+    "ADP": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 319
+    },
+    "ADV": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 186
+    },
+    "AUX": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 246
+    },
+    "CCONJ": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 111
+    },
+    "DET": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 290
+    },
+    "INTJ": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 20
+    },
+    "NOUN": {
+      "P": 0.1587,
+      "R": 0.0166,
+      "F1": 0.0301,
+      "support": 602
+    },
+    "NUM": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 115
+    },
+    "PART": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 104
+    },
+    "PRON": {
+      "P": 0.75,
+      "R": 0.0265,
+      "F1": 0.0511,
+      "support": 340
+    },
+    "PROPN": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 332
+    },
+    "PUNCT": {
+      "P": 0.3784,
+      "R": 0.0311,
+      "F1": 0.0575,
+      "support": 450
+    },
+    "SCONJ": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 64
+    },
+    "SYM": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 18
+    },
+    "VERB": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 404
+    },
+    "X": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 6
+    }
+  },
+  "top_confusions": [
+    {
+      "gold": "NOUN",
+      "pred": "_MISSING",
+      "n": 585
+    },
+    {
+      "gold": "PUNCT",
+      "pred": "_MISSING",
+      "n": 436
+    },
+    {
+      "gold": "VERB",
+      "pred": "_MISSING",
+      "n": 363
+    },
+    {
+      "gold": "PROPN",
+      "pred": "_MISSING",
+      "n": 299
+    },
+    {
+      "gold": "ADP",
+      "pred": "_MISSING",
+      "n": 296
+    },
+    {
+      "gold": "PRON",
+      "pred": "_MISSING",
+      "n": 277
+    },
+    {
+      "gold": "DET",
+      "pred": "_MISSING",
+      "n": 267
+    },
+    {
+      "gold": "ADJ",
+      "pred": "_MISSING",
+      "n": 235
+    },
+    {
+      "gold": "AUX",
+      "pred": "_MISSING",
+      "n": 223
+    },
+    {
+      "gold": "ADV",
+      "pred": "_MISSING",
+      "n": 181
+    },
+    {
+      "gold": "NUM",
+      "pred": "_MISSING",
+      "n": 112
+    },
+    {
+      "gold": "CCONJ",
+      "pred": "_MISSING",
+      "n": 108
+    },
+    {
+      "gold": "PART",
+      "pred": "_MISSING",
+      "n": 98
+    },
+    {
+      "gold": "SCONJ",
+      "pred": "_MISSING",
+      "n": 60
+    },
+    {
+      "gold": "VERB",
+      "pred": "_INVALID",
+      "n": 30
+    }
+  ]
+}

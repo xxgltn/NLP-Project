@@ -1,0 +1,221 @@
+{
+  "config": {
+    "model": "llama-1b",
+    "k": 8,
+    "seed": 1,
+    "method": "prompt_tuning",
+    "n_virtual": 50,
+    "lr": 0.01,
+    "steps": 400,
+    "batch": 4,
+    "init": "text",
+    "trainable": 102400,
+    "total": 1235916800
+  },
+  "token_acc": 0.4726,
+  "macro_f1": 0.4275,
+  "sent_exact": 0.0233,
+  "missing_rate": 0.2493,
+  "n_tokens": 3855,
+  "n_sents": 300,
+  "buckets": {
+    "seen_in_pool": {
+      "acc": 0.5821,
+      "n": 1285
+    },
+    "ambiguous_type": {
+      "acc": 0.4987,
+      "n": 2330
+    },
+    "unseen_in_pool": {
+      "acc": 0.4179,
+      "n": 2570
+    },
+    "unambiguous_type": {
+      "acc": 0.4328,
+      "n": 1525
+    }
+  },
+  "per_tag": {
+    "ADJ": {
+      "P": 0.374,
+      "R": 0.5444,
+      "F1": 0.4433,
+      "support": 248
+    },
+    "ADP": {
+      "P": 0.6535,
+      "R": 0.6207,
+      "F1": 0.6367,
+      "support": 319
+    },
+    "ADV": {
+      "P": 0.3636,
+      "R": 0.3011,
+      "F1": 0.3294,
+      "support": 186
+    },
+    "AUX": {
+      "P": 0.498,
+      "R": 0.5041,
+      "F1": 0.501,
+      "support": 246
+    },
+    "CCONJ": {
+      "P": 0.9344,
+      "R": 0.5135,
+      "F1": 0.6628,
+      "support": 111
+    },
+    "DET": {
+      "P": 0.822,
+      "R": 0.669,
+      "F1": 0.7376,
+      "support": 290
+    },
+    "INTJ": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 20
+    },
+    "NOUN": {
+      "P": 0.6958,
+      "R": 0.5814,
+      "F1": 0.6335,
+      "support": 602
+    },
+    "NUM": {
+      "P": 0.7586,
+      "R": 0.3826,
+      "F1": 0.5087,
+      "support": 115
+    },
+    "PART": {
+      "P": 0.7414,
+      "R": 0.4135,
+      "F1": 0.5309,
+      "support": 104
+    },
+    "PRON": {
+      "P": 0.8022,
+      "R": 0.6324,
+      "F1": 0.7072,
+      "support": 340
+    },
+    "PROPN": {
+      "P": 0.7093,
+      "R": 0.3675,
+      "F1": 0.4841,
+      "support": 332
+    },
+    "PUNCT": {
+      "P": 0.8564,
+      "R": 0.3711,
+      "F1": 0.5178,
+      "support": 450
+    },
+    "SCONJ": {
+      "P": 0.4,
+      "R": 0.0312,
+      "F1": 0.058,
+      "support": 64
+    },
+    "SYM": {
+      "P": 1.0,
+      "R": 0.0556,
+      "F1": 0.1053,
+      "support": 18
+    },
+    "VERB": {
+      "P": 0.755,
+      "R": 0.2822,
+      "F1": 0.4108,
+      "support": 404
+    },
+    "X": {
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0,
+      "support": 6
+    }
+  },
+  "top_confusions": [
+    {
+      "gold": "PUNCT",
+      "pred": "_MISSING",
+      "n": 280
+    },
+    {
+      "gold": "NOUN",
+      "pred": "_MISSING",
+      "n": 121
+    },
+    {
+      "gold": "PROPN",
+      "pred": "_MISSING",
+      "n": 73
+    },
+    {
+      "gold": "ADP",
+      "pred": "_MISSING",
+      "n": 72
+    },
+    {
+      "gold": "VERB",
+      "pred": "AUX",
+      "n": 64
+    },
+    {
+      "gold": "PROPN",
+      "pred": "NOUN",
+      "n": 61
+    },
+    {
+      "gold": "VERB",
+      "pred": "_INVALID",
+      "n": 59
+    },
+    {
+      "gold": "NUM",
+      "pred": "_MISSING",
+      "n": 59
+    },
+    {
+      "gold": "VERB",
+      "pred": "_MISSING",
+      "n": 56
+    },
+    {
+      "gold": "PRON",
+      "pred": "_MISSING",
+      "n": 55
+    },
+    {
+      "gold": "VERB",
+      "pred": "NOUN",
+      "n": 53
+    },
+    {
+      "gold": "AUX",
+      "pred": "_MISSING",
+      "n": 50
+    },
+    {
+      "gold": "NOUN",
+      "pred": "ADJ",
+      "n": 49
+    },
+    {
+      "gold": "ADV",
+      "pred": "ADJ",
+      "n": 44
+    },
+    {
+      "gold": "DET",
+      "pred": "_MISSING",
+      "n": 43
+    }
+  ],
+  "train_minutes": 9.3
+}
